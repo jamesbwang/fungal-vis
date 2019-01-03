@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "filepond": "^3.7.3",
     "rc-menu": "^7.4.21",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-filepond": "^5.0.0",
     "react-scripts": "2.1.2",
     "reactjs-dropdown-component": "^1.0.6"
   },

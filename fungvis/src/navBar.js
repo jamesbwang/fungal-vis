@@ -3,9 +3,10 @@ import {DropdownMultiple, Dropdown} from 'reactjs-dropdown-component';
 import ReactDOM from 'react-dom';
 import './App.css';
 import FastaForm from'./FastaForm'
+import FileUploadField from './FileUpload';
 
 const textElement = <FastaForm/>
-
+const fileUpload = <FileUploadField/>
 class NavBar extends Component {
     constructor(){
         super()
@@ -30,9 +31,11 @@ class NavBar extends Component {
         var found = temp.filter(function(temp){return temp.selected === true});
         switch(found[0]["id"]){
             case 0:
+            ReactDOM.render(fileUpload, document.getElementById('inputField')); 
+            break;       
             case 1:
             default:
-           ReactDOM.render(textElement, document.getElementById('potentialTextField'));        
+           ReactDOM.render(textElement, document.getElementById('inputField'));        
         }
       }
     
@@ -57,7 +60,7 @@ class NavBar extends Component {
                 
             />
             </div>
-            <div className="row" id="potentialTextField">
+            <div className="row_input" id="inputField">
 
             </div>
         </div>

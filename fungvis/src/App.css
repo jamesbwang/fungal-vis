@@ -26,6 +26,11 @@
   display: inline-block;
   float: left;
 }
+.rows .row_input {
+  display: inline-block;
+  float: left;
+  width : 20%;
+}
 
 @keyframes App-logo-spin {
   from {
